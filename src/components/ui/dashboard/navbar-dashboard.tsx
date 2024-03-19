@@ -11,7 +11,10 @@ import {
   NotebookPen,
   Settings,
 } from "lucide-react";
+
 import Link from "next/link";
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import {
   DropdownMenu,
@@ -23,7 +26,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
@@ -85,13 +88,9 @@ export default async function NavBarDashboard() {
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Avatar className="flex size-12 items-start rounded-full ">
+          <Avatar>
             <AvatarImage
-              src={
-                session.user?.image ||
-                "https://static.vecteezy.com/ti/vetor-gratis/p3/9292244-default-avatar-icon-vector-of-social-media-user-vetor.jpg"
-              }
-              alt="User Image from Google Account"
+              src={session.user?.image || "https://github.com/shadcn.png"}
               className="size-12 rounded-full"
             />
             <AvatarFallback>CN</AvatarFallback>
