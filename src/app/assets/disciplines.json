@@ -1,221 +1,256 @@
 {
-    "disciplinas": [
+  "disciplinas": [
       {
-        "sigla": "FAC",
-        "nome_completo": "Fundamentos de Algoritmos de Computação",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "FAC",
+          "nome_completo": "Fundamentos de Algoritmos de Computação",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "IAS",
-        "nome_completo": "Introdução à Análise de Sistemas",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "IAS",
+          "nome_completo": "Introdução à Análise de Sistemas",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "IHM",
-        "nome_completo": "Interface Homem-Máquina",
-        "creditos": 2,
-        "periodo": 1
+          "sigla": "IHM",
+          "nome_completo": "Interface Homem-Máquina",
+          "creditos": 2,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "LPO",
-        "nome_completo": "Língua Portuguesa",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "LPO",
+          "nome_completo": "Língua Portuguesa",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "MAB",
-        "nome_completo": "Matemática Básica",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "MAB",
+          "nome_completo": "Matemática Básica",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "MAC",
-        "nome_completo": "Matemática para Computação",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "MAC",
+          "nome_completo": "Matemática para Computação",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "ORG",
-        "nome_completo": "Organização de Computadores",
-        "creditos": 4,
-        "periodo": 1
+          "sigla": "ORG",
+          "nome_completo": "Organização de Computadores",
+          "creditos": 4,
+          "periodo": 1,
+          "status": "C"
       },
       {
-        "sigla": "CAL",
-        "nome_completo": "Cálculo",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "CAL",
+          "nome_completo": "Cálculo",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "CAW",
-        "nome_completo": "Construção de Aplicações WEB",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "CAW",
+          "nome_completo": "Construção de Aplicações WEB",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "FPR",
-        "nome_completo": "Fundamentos de Programação",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "FPR",
+          "nome_completo": "Fundamentos de Programação",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "LES",
-        "nome_completo": "Língua Estrangeira",
-        "creditos": 2,
-        "periodo": 2
+          "sigla": "LES",
+          "nome_completo": "Língua Estrangeira",
+          "creditos": 2,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "MPA",
-        "nome_completo": "Métodos e Processos Administrativos",
-        "creditos": 2,
-        "periodo": 2
+          "sigla": "MPA",
+          "nome_completo": "Métodos e Processos Administrativos",
+          "creditos": 2,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "REQ",
-        "nome_completo": "Engenharia de Requisitos",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "REQ",
+          "nome_completo": "Engenharia de Requisitos",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "SOP",
-        "nome_completo": "Fundamentos de Sistemas Operacionais",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "SOP",
+          "nome_completo": "Fundamentos de Sistemas Operacionais",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "TPH",
-        "nome_completo": "Técnicas e Paradigmas Humanos",
-        "creditos": 4,
-        "periodo": 2
+          "sigla": "TPH",
+          "nome_completo": "Técnicas e Paradigmas Humanos",
+          "creditos": 4,
+          "periodo": 2,
+          "status": "C"
       },
       {
-        "sigla": "ALG",
-        "nome_completo": "Álgebra Linear",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "ALG",
+          "nome_completo": "Álgebra Linear",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "N"
       },
       {
-        "sigla": "DAW",
-        "nome_completo": "Desenvolvimento de Tecnologias WEB",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "DAW",
+          "nome_completo": "Desenvolvimento de Tecnologias WEB",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "C"
       },
       {
-        "sigla": "ESD",
-        "nome_completo": "Estrutura de Dados",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "ESD",
+          "nome_completo": "Estrutura de Dados",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "C"
       },
       {
-        "sigla": "PBD",
-        "nome_completo": "Projeto de Bancos de Dados",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "PBD",
+          "nome_completo": "Projeto de Bancos de Dados",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "C"
       },
       {
-        "sigla": "POB",
-        "nome_completo": "Programação Orientada a Objetos Básica",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "POB",
+          "nome_completo": "Programação Orientada a Objetos Básica",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "C"
       },
       {
-        "sigla": "RSD",
-        "nome_completo": "Fundamentos de Redes e Sistemas Distribuídos",
-        "creditos": 4,
-        "periodo": 3
+          "sigla": "RSD",
+          "nome_completo": "Fundamentos de Redes e Sistemas Distribuídos",
+          "creditos": 4,
+          "periodo": 3,
+          "status": "C"
       },
       {
-        "sigla": "ADS",
-        "nome_completo": "Tópicos em Análise e Desenvolvimento de Sistemas",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "ADS",
+          "nome_completo": "Tópicos em Análise e Desenvolvimento de Sistemas",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "A"
       },
       {
-        "sigla": "EMP",
-        "nome_completo": "Empreendedorismo e Inovação",
-        "creditos": 2,
-        "periodo": 4
+          "sigla": "EMP",
+          "nome_completo": "Empreendedorismo e Inovação",
+          "creditos": 2,
+          "periodo": 4,
+          "status": "A"
       },
       {
-        "sigla": "EST",
-        "nome_completo": "Estatística e Probabilidade",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "EST",
+          "nome_completo": "Estatística e Probabilidade",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "N"
       },
       {
-        "sigla": "UBD",
-        "nome_completo": "Utilização de Bancos de Dados",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "UBD",
+          "nome_completo": "Utilização de Bancos de Dados",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "C"
       },
       {
-        "sigla": "POA",
-        "nome_completo": "Programação Orientada a Objetos Avançada",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "POA",
+          "nome_completo": "Programação Orientada a Objetos Avançada",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "A"
       },
       {
-        "sigla": "MET",
-        "nome_completo": "Metodologia de Pesquisa",
-        "creditos": 2,
-        "periodo": 4
+          "sigla": "MET",
+          "nome_completo": "Metodologia de Pesquisa",
+          "creditos": 2,
+          "periodo": 4,
+          "status": "N"
       },
       {
-        "sigla": "MOD",
-        "nome_completo": "Modelagem de Sistemas",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "MOD",
+          "nome_completo": "Modelagem de Sistemas",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "C"
       },
       {
-        "sigla": "SEG",
-        "nome_completo": "Segurança da Informação",
-        "creditos": 4,
-        "periodo": 4
+          "sigla": "SEG",
+          "nome_completo": "Segurança da Informação",
+          "creditos": 4,
+          "periodo": 4,
+          "status": "N"
       },
       {
-        "sigla": "LIB",
-        "nome_completo": "Linguagem Brasileira de Sinais (opcional)",
-        "creditos": 2,
-        "periodo": 4
+          "sigla": "LIB",
+          "nome_completo": "Linguagem Brasileira de Sinais (opcional)",
+          "creditos": 2,
+          "periodo": 4,
+          "status": "N"
       },
       {
-        "sigla": "GPS",
-        "nome_completo": "Gerência e Projeto de Sistemas",
-        "creditos": 2,
-        "periodo": 5
+          "sigla": "GPS",
+          "nome_completo": "Gerência e Projeto de Sistemas",
+          "creditos": 2,
+          "periodo": 5,
+          "status": "N"
       },
       {
-        "sigla": "PDM",
-        "nome_completo": "Programação de Dispositivos Móveis",
-        "creditos": 4,
-        "periodo": 5
+          "sigla": "PDM",
+          "nome_completo": "Programação de Dispositivos Móveis",
+          "creditos": 4,
+          "periodo": 5,
+          "status": "N"
       },
       {
-        "sigla": "PJS",
-        "nome_completo": "Projeto de Sistemas",
-        "creditos": 4,
-        "periodo": 5
+          "sigla": "PJS",
+          "nome_completo": "Projeto de Sistemas",
+          "creditos": 4,
+          "periodo": 5,
+          "status": "N"
       },
       {
-        "sigla": "SBO",
-        "nome_completo": "Programação de Scripts de Bancos de Dados",
-        "creditos": 4,
-        "periodo": 5
+          "sigla": "SBO",
+          "nome_completo": "Programação de Scripts de Bancos de Dados",
+          "creditos": 4,
+          "periodo": 5,
+          "status": "A"
       },
       {
-        "sigla": "5TAV",
-        "nome_completo": "Tópicos Avançados",
-        "creditos": 4,
-        "periodo": 5
+          "sigla": "TAV",
+          "nome_completo": "Tópicos Avançados",
+          "creditos": 4,
+          "periodo": 5,
+          "status": "N"
       },
       {
-        "sigla": "TFC",
-        "nome_completo": "Orientação de Trabalho de Final de Curso",
-        "creditos": 2,
-        "periodo": 5
+          "sigla": "TFC",
+          "nome_completo": "Orientação de Trabalho de Final de Curso",
+          "creditos": 2,
+          "periodo": 5,
+          "status": "N"
       }
-    ]
-  }
-  
+  ]
+}
