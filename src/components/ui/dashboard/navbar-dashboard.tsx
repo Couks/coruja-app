@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+
 import {
   BookPlus,
   CalendarClock,
@@ -27,18 +28,15 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
 export default async function NavBarDashboard() {
+  const session = await getServerSession();
 
-  const session = await getServerSession()
-
-  if(!session) {
-    return redirect('/auth');
+  if (!session) {
+    return redirect("/auth");
   }
 
   return (
-
-    
     <aside className="col-span-2 flex flex-col items-center justify-between bg-gradient-to-b from-slate-900 via-zinc-950/90 to-slate-800 px-2 py-6 text-white md:items-start md:px-8 md:py-8">
-      <nav className="space-y-6">
+      <nav className="space-y-8">
         <Link
           href="/"
           className="flex items-center gap-2 transition hover:text-blue-400"
@@ -61,7 +59,7 @@ export default async function NavBarDashboard() {
           <span className="hidden font-semibold md:block">Grade Horária</span>
         </Link>
         <Link
-          href="/dashboard/disciplines"
+          href="/dashboard"
           className="flex items-center gap-2 transition hover:text-blue-400"
         >
           <NotebookPen className="size-5" />
@@ -89,8 +87,11 @@ export default async function NavBarDashboard() {
         <DropdownMenuTrigger asChild>
           <Avatar className="flex size-12 items-start rounded-full ">
             <AvatarImage
-              src={session.user?.image}
-              alt="github user"
+              src={
+                session.user?.image ||
+                "https://static.vecteezy.com/ti/vetor-gratis/p3/9292244-default-avatar-icon-vector-of-social-media-user-vetor.jpg"
+              }
+              alt="User Image from Google Account"
               className="size-12 rounded-full"
             />
             <AvatarFallback>CN</AvatarFallback>
