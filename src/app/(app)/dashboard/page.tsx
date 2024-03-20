@@ -1,7 +1,7 @@
 'use client';
 
-import NavBarDashboard from "@/components/ui/dashboard/navbar-dashboard";
-import { Disciplines } from "./disciplines/page";
+import NavBarDashboard from "@/app/(app)/dashboard/_components/dashboard/navbar-dashboard";
+import { Disciplines } from "./_components/disciplines/page";
 
 export default function Dashboard() {
   return (

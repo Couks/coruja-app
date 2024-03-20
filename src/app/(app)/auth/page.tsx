@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-
 import {
   Select,
   SelectContent,
@@ -19,18 +18,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logoCoruja from "@/app/assets/coruja_grande.png";
-import { GoogleLoginButton } from "@/components/ui/login/google-auth-button";
+import { GoogleLoginButton } from "./_components/login/google-auth-button";
 
 export default function Auth() {
   return (
     <section className="flex h-screen w-screen items-center justify-center bg-gradient-to-r from-slate-950 via-30% to-slate-700 p-4 md:p-8">
-      <form className="mx-2 my-8 w-full overflow-hidden rounded-lg border border-gray-200 bg-zinc-100 dark:border-gray-800 md:w-[650px]">
+      <form className="mx-2 my-8 w-full overflow-hidden rounded-xl border border-gray-200 bg-zinc-100 dark:border-gray-800 md:w-[650px]">
         <div className="space-y-4 p-6">
           <div className="flex flex-col items-center space-y-2 text-center">
-            <Image src={logoCoruja} alt="coruja" width={50} height={50} />
-            <h1 className="text-3xl font-semibold">Login</h1>
+            <Image src={logoCoruja} alt="coruja" width={100} height={100} />
+            <h1 className="text-2xl font-semibold lg:text-3xl">Login</h1>
 
-            <span className="w-60 text-gray-500 dark:text-gray-400">
+            <span className="w-full md:text-md text-gray-500 dark:text-gray-400">
               Entre com sua matrícula e senha para acessar sua conta
             </span>
           </div>

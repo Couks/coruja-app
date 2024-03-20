@@ -4,8 +4,11 @@ import { signIn } from "next-auth/react";
 
 export function GoogleLoginButton() {
   return (
-    <button onClick={() => signIn("google", { callbackUrl: "/dashboard" })} className="flex items-center justify-center w-full">
-      <div className="flex items-center gap-2 rounded-full py-2 px-8 ring-1 ring-zinc-300">
+    <button
+      onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
+      className="flex w-full items-center justify-center"
+    >
+      <div className="flex items-center gap-2 rounded-full px-8 py-2 ring-1 ring-zinc-300">
         <div className="size=2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +37,7 @@ export function GoogleLoginButton() {
           </svg>
         </div>
 
-        <span className="text-xs">Faça login com sua conta Google</span>
+        <span className="md:text-md text-sm">Google Acadêmico</span>
       </div>
     </button>
   );
