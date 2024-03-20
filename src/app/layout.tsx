@@ -7,8 +7,7 @@ import { cn } from "@/lib/utils";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
-
+});
 
 export const metadata: Metadata = {
   title: "Coruja",
@@ -22,7 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>{children}</body>
+      <body
+        className={cn(
+          "bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
