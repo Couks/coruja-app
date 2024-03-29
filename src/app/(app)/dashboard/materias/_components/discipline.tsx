@@ -1,5 +1,3 @@
-'use client' ;
-
 import { BookOpenTextIcon, CircleDollarSign } from "lucide-react";
 import Link from "next/link";
 
@@ -11,14 +9,13 @@ export function Discipline({
     nome_completo: string;
     creditos: number;
     periodo: number;
-    status: string; 
+    status: string;
   };
 }) {
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case "C":
-        return "bg-green-100";
+        return "bg-green-100 ";
       case "A":
         return "bg-orange-100";
       default:
@@ -29,7 +26,7 @@ export function Discipline({
   return (
     <Link href="#">
       <div
-        className={`flex flex-col h-full items-center justify-center gap-3 rounded-xl border border-gray-200 p-4 ring-slate-900 hover:ring-1 dark:border-gray-800 ${getStatusColor(
+        className={`flex h-full flex-col items-center justify-center gap-3 rounded-xl border border-gray-200 p-4 shadow-lg ring-slate-900 hover:ring-1 dark:border-gray-800 ${getStatusColor(
           item.status,
         )}`}
       >
