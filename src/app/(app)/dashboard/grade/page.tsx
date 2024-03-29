@@ -31,7 +31,7 @@ const ScheduleComponent = () => {
     ),
   );
 
-  const handleScheduleChange = (dayIndex, hourIndex, event) => {
+  const handleScheduleChange = (dayIndex: any, hourIndex: any, event: any) => {
     const newSchedule = [...schedule];
     newSchedule[dayIndex][hourIndex] = event.target.value;
     setSchedule(newSchedule);

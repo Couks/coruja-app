@@ -1,4 +1,3 @@
-"use server";
 import "@/app/globals.css";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -39,8 +38,8 @@ export default async function RootLayout({
   }
   return (
     <div className="flex h-screen w-auto">
-      <aside className="flex h-screen w-auto flex-col items-center justify-between bg-gradient-to-b from-slate-900 via-zinc-950/90 to-slate-800 px-2 py-6 text-white md:items-start md:px-8 md:py-8">
-        <nav className="space-y-8">
+      <aside className="fixed bottom-0 flex w-full items-center justify-between bg-gradient-to-b from-slate-900 via-zinc-950 to-slate-800 px-4 py-3 text-white md:static md:h-screen md:w-auto md:flex-col md:items-start md:justify-between md:px-4 md:py-8">
+        <nav className="flex gap-6 md:flex-col">
           <Link
             href="/dashboard"
             className="flex items-center gap-2 transition hover:text-blue-400"
@@ -87,7 +86,7 @@ export default async function RootLayout({
           </Link>
         </nav>
 
-        <nav>
+        <nav className="flex md:w-full md:items-center md:justify-center md:gap-3">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Avatar>
@@ -97,7 +96,7 @@ export default async function RootLayout({
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-full">
+            <DropdownMenuContent className="min-w-[250px] shadow-inner ring-2 ring-slate-300 md:ml-2">
               <DropdownMenuLabel>{session.user?.name}</DropdownMenuLabel>
               <DropdownMenuLabel className="pb-2">
                 <span className="text-xs font-normal">
@@ -130,9 +129,17 @@ export default async function RootLayout({
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <div className="hidden items-start justify-center md:flex md:flex-col">
+            <span className="text-[12px] font-normal text-white">
+              Olá, seja bem vindo!
+            </span>
+            <span className="text-md font-bold text-white">
+              {session.user?.name}
+            </span>
+          </div>
         </nav>
       </aside>
-      <section className="flex-1 flex-col items-center overflow-auto bg-zinc-100 p-2 dark:bg-gray-800 md:px-8 md:py-6">
+      <section className="flex-1 flex-col items-center overflow-auto bg-zinc-100 p-2 dark:bg-gray-800 md:p-4 ">
         {children}
       </section>
     </div>

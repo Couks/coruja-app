@@ -49,7 +49,7 @@ export default function Disciplines() {
   };
 
   return (
-    <main className="flex flex-col items-center gap-2 py-4 dark:bg-gray-800">
+    <main className="flex flex-col items-center gap-2 dark:bg-gray-800">
       <div className="flex w-full flex-col items-center gap-3 rounded-lg bg-slate-800 p-4 md:flex-row">
         <Select onChange={handlePeriodoChange}>
           <SelectTrigger className="w-full ">
@@ -78,7 +78,7 @@ export default function Disciplines() {
         </Select>
       </div>
 
-      <div className="grid h-full w-full grid-cols-1 gap-4 py-4 md:grid-cols-3">
+      <div className="grid h-full w-full grid-cols-2 gap-4 py-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {disciplinasFiltradas.map((discipline) => (
           <Discipline key={discipline.sigla} item={discipline} />
         ))}
