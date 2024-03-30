@@ -2,7 +2,7 @@
 
 import disciplinasData from "@/app/assets/disciplines.json";
 import { useState } from "react";
-import { Discipline } from "./_components/discipline";
+import { Disciplina } from "./_components/disciplina";
 
 import {
   Select,
@@ -50,7 +50,7 @@ export default function Disciplines() {
 
   return (
     <main className="flex flex-col items-center gap-2 dark:bg-gray-800">
-      <div className="flex w-full flex-col items-center gap-3 rounded-lg bg-slate-800 p-4 md:flex-row">
+      <div className="flex w-full flex-col items-center gap-3 rounded-lg bg-slate-700 p-4 md:flex-row">
         <Select onChange={handlePeriodoChange}>
           <SelectTrigger className="w-full ">
             <SelectValue placeholder="Selecione o período que deseja filtrar" />
@@ -80,7 +80,7 @@ export default function Disciplines() {
 
       <div className="grid h-full w-full grid-cols-2 gap-4 py-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {disciplinasFiltradas.map((discipline) => (
-          <Discipline key={discipline.sigla} item={discipline} />
+          <Disciplina key={discipline.sigla} item={discipline} />
         ))}
       </div>
     </main>

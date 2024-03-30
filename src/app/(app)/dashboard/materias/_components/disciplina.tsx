@@ -1,7 +1,7 @@
 import { BookOpenTextIcon, CircleDollarSign } from "lucide-react";
 import Link from "next/link";
 
-export function Discipline({
+export function Disciplina({
   item,
 }: {
   item: {
@@ -15,11 +15,11 @@ export function Discipline({
   const getStatusColor = (status: string) => {
     switch (status) {
       case "C":
-        return "bg-green-100 ";
+        return "bg-green-300 ";
       case "A":
-        return "bg-orange-100";
+        return "bg-orange-300";
       default:
-        return "bg-white";
+        return "bg-zinc-200";
     }
   };
 
@@ -38,9 +38,7 @@ export function Discipline({
           <p className="text-xs text-gray-500">{item.nome_completo}</p>
           <div className="flex items-center justify-center gap-1">
             <CircleDollarSign className="size-4" />
-            <span className="text-xs font-semibold">
-              Créditos: {item.creditos}
-            </span>
+            <span className="text-xs font-semibold">{item.creditos}</span>
           </div>
         </div>
       </div>

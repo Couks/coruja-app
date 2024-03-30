@@ -18,8 +18,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logoCoruja from "@/app/assets/coruja_grande.png";
-import { signIn } from "next-auth/react";
-import { GoogleLoginButton } from "./_components/login/google-auth-button";
+import { Separator } from "@/components/ui/separator";
+import { FacebookLoginButton } from "./_components/facebook-auth-button";
+import { GithubLoginButton } from "./_components/github-auth-button";
+import { GoogleLoginButton } from "./_components/google-auth-button";
 
 export default function Auth() {
   return (
@@ -38,29 +40,34 @@ export default function Auth() {
             </span>
           </div>
 
+          <Separator />
+
           <div className="space-y-4">
-            <div className="space-y-2">
-              <Label htmlFor="matricula">Matrícula</Label>
-              <Input
-                className="text-sm"
-                id="matricula"
-                placeholder="Insira sua matrícula da FAETERJ"
-                required
-                type="text"
-              />
+            <div className="flex gap-3">
+              <div className="w-1/2 space-y-2">
+                <Label htmlFor="matricula">Matrícula</Label>
+                <Input
+                  className="text-sm"
+                  id="matricula"
+                  placeholder="Insira sua matrícula"
+                  required
+                  type="text"
+                />
+              </div>
+              <div className="w-1/2 space-y-2">
+                <Label htmlFor="password">Senha</Label>
+                <Input
+                  className="text-sm"
+                  id="password"
+                  required
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+              </div>
             </div>
+
             <div className="space-y-2">
-              <Label htmlFor="password">Senha</Label>
-              <Input
-                className="text-sm"
-                id="password"
-                required
-                type="password"
-                placeholder="Digite sua senha"
-              />
-            </div>
-            <div className="space-y-2">
-              <Select>
+              <Select required>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Eu sou" />
                 </SelectTrigger>
@@ -74,18 +81,23 @@ export default function Auth() {
                 </SelectContent>
               </Select>
             </div>
-            <Button
-              onSubmit={() => signIn("email", { callbackUrl: "/dashboard" })}
-              type="submit"
-              className="w-full text-sm"
-              size="sm"
-            >
+            <Button type="submit" className="w-full text-sm" size="sm">
               Login
             </Button>
-
-            <GoogleLoginButton />
           </div>
 
+          <div className="flex items-center justify-center px-8">
+            <Separator className="w-1/3" />
+            <span className="mx-4 text-xs font-semibold text-slate-900 ">
+              Ou continue com
+            </span>
+            <Separator className="w-1/3" />
+          </div>
+          <div className="flex items-center justify-center">
+            <GoogleLoginButton />
+            <FacebookLoginButton />
+            <GithubLoginButton />
+          </div>
           <Link
             className="inline-block w-full text-center text-sm underline"
             href="#"
