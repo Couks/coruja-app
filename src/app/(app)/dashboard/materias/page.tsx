@@ -12,40 +12,42 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function Disciplines() {
+export default function Disciplinas() {
   const [disciplinasFiltradas, setDisciplinasFiltradas] = useState(
     disciplinasData.disciplinas,
   );
-  const [periodoSelecionado, setPeriodoSelecionado] =
-    useState("Todos os períodos");
-  const [statusSelecionado, setStatusSelecionado] = useState("Todos");
 
-  const filtrarDados = () => {
-    let disciplinasFiltradas = disciplinasData.disciplinas;
+  const [periodoSelecionado, setPeriodoSelecionado] = useState(0);
+  const [statusSelecionado, setStatusSelecionado] = useState("T");
 
-    if (periodoSelecionado && periodoSelecionado !== "Todos os períodos") {
-      disciplinasFiltradas = disciplinasFiltradas.filter(
-        (disciplina) => `${disciplina.periodo}º Período` === periodoSelecionado,
+  const aplicarFiltros = () => {
+    let filtradas = disciplinasData.disciplinas;
+
+    if (periodoSelecionado.toString()) {
+      filtradas = filtradas.filter(
+        (disciplina) => disciplina.periodo === periodoSelecionado,
       );
     }
 
-    if (statusSelecionado && statusSelecionado !== "Todos") {
-      disciplinasFiltradas = disciplinasFiltradas.filter(
+    if (statusSelecionado) {
+      filtradas = filtradas.filter(
         (disciplina) => disciplina.status === statusSelecionado,
       );
     }
 
-    setDisciplinasFiltradas(disciplinasFiltradas);
+    setDisciplinasFiltradas(filtradas);
+    console.log(filtradas);
   };
 
-  const handlePeriodoChange = (event: any) => {
-    setPeriodoSelecionado(event.target.value);
-    filtrarDados();
+  const handlePeriodoChange = (value: number) => {
+    setPeriodoSelecionado(value);
+    aplicarFiltros();
+    console.log(value);
   };
 
-  const handleStatusChange = (event: any) => {
-    setStatusSelecionado(event.target.value);
-    filtrarDados();
+  const handleStatusChange = (value: string) => {
+    setStatusSelecionado(value);
+    aplicarFiltros();
   };
 
   return (
@@ -56,12 +58,12 @@ export default function Disciplines() {
             <SelectValue placeholder="Selecione o período que deseja filtrar" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="1º Período">1º Período</SelectItem>
-            <SelectItem value="2º Período">2º Período</SelectItem>
-            <SelectItem value="3º Período">3º Período</SelectItem>
-            <SelectItem value="4º Período">4º Período</SelectItem>
-            <SelectItem value="5º Período">5º Período</SelectItem>
-            <SelectItem value="Todos os períodos">Todos</SelectItem>
+            <SelectItem value="T">Todos os Períodos</SelectItem>
+            <SelectItem value="1">1º Período</SelectItem>
+            <SelectItem value="2">2º Período</SelectItem>
+            <SelectItem value="3">3º Período</SelectItem>
+            <SelectItem value="4">4º Período</SelectItem>
+            <SelectItem value="5">5º Período</SelectItem>
           </SelectContent>
         </Select>
 
@@ -70,10 +72,10 @@ export default function Disciplines() {
             <SelectValue placeholder="Selecione o status que deseja filtrar" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="Status">Todos</SelectItem>
-            <SelectItem value="Concluidas">Concluídas</SelectItem>
-            <SelectItem value="Em Andamento">Em Andamento</SelectItem>
-            <SelectItem value="Pendentes">Pendentes</SelectItem>
+            <SelectItem value="T">Todos</SelectItem>
+            <SelectItem value="C">Concluídas</SelectItem>
+            <SelectItem value="A">Em Andamento</SelectItem>
+            <SelectItem value="P">Pendentes</SelectItem>
           </SelectContent>
         </Select>
       </div>

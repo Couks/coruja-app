@@ -110,7 +110,7 @@
       "nome_completo": "Álgebra Linear",
       "creditos": 4,
       "periodo": 3,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "DAW",
@@ -166,7 +166,7 @@
       "nome_completo": "Estatística e Probabilidade",
       "creditos": 4,
       "periodo": 4,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "UBD",
@@ -187,7 +187,7 @@
       "nome_completo": "Metodologia de Pesquisa",
       "creditos": 2,
       "periodo": 4,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "MOD",
@@ -201,35 +201,35 @@
       "nome_completo": "Segurança da Informação",
       "creditos": 4,
       "periodo": 4,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "LIB",
       "nome_completo": "Linguagem Brasileira de Sinais",
       "creditos": 2,
       "periodo": 4,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "GPS",
       "nome_completo": "Gerência e Projeto de Sistemas",
       "creditos": 2,
       "periodo": 5,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "PDM",
       "nome_completo": "Programação de Dispositivos Móveis",
       "creditos": 4,
       "periodo": 5,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "PJS",
       "nome_completo": "Projeto de Sistemas",
       "creditos": 4,
       "periodo": 5,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "SBO",
@@ -243,14 +243,14 @@
       "nome_completo": "Tópicos Avançados",
       "creditos": 4,
       "periodo": 5,
-      "status": "N"
+      "status": "P"
     },
     {
       "sigla": "TFC",
       "nome_completo": "Orientação de Trabalho de Final de Curso",
       "creditos": 2,
       "periodo": 5,
-      "status": "N"
+      "status": "P"
     }
   ]
 }

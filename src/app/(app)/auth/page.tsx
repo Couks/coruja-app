@@ -19,7 +19,6 @@ import Link from "next/link";
 
 import logoCoruja from "@/app/assets/coruja_grande.png";
 import { Separator } from "@/components/ui/separator";
-import { FacebookLoginButton } from "./_components/facebook-auth-button";
 import { GithubLoginButton } from "./_components/github-auth-button";
 import { GoogleLoginButton } from "./_components/google-auth-button";
 
@@ -28,6 +27,7 @@ export default function Auth() {
     <section className="flex h-screen w-screen items-center justify-center bg-gradient-to-r from-slate-950 via-30% to-slate-700 p-4 md:p-8">
       <form
         action="submit"
+        id="submit"
         className="mx-2 my-8 w-full overflow-hidden rounded-xl border border-gray-200 bg-zinc-100 dark:border-gray-800 md:w-[650px]"
       >
         <div className="space-y-4 p-6">
@@ -39,8 +39,6 @@ export default function Auth() {
               Entre com sua matrícula e senha para acessar sua conta
             </span>
           </div>
-
-          <Separator />
 
           <div className="space-y-4">
             <div className="flex gap-3">
@@ -81,21 +79,20 @@ export default function Auth() {
                 </SelectContent>
               </Select>
             </div>
-            <Button type="submit" className="w-full text-sm" size="sm">
-              Login
+            <Button type="submit" className="w-full py-6 text-sm" size="sm">
+              <span className="text-lg font-semibold">Entrar</span>
             </Button>
           </div>
 
-          <div className="flex items-center justify-center px-8">
-            <Separator className="w-1/3" />
-            <span className="mx-4 text-xs font-semibold text-slate-900 ">
+          <div className="flex items-center justify-center gap-2 overflow-hidden">
+            <Separator />
+            <span className="mx-4 shrink-0 text-xs font-semibold text-slate-900 ">
               Ou continue com
             </span>
-            <Separator className="w-1/3" />
+            <Separator />
           </div>
           <div className="flex items-center justify-center">
             <GoogleLoginButton />
-            <FacebookLoginButton />
             <GithubLoginButton />
           </div>
           <Link

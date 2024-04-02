@@ -1,6 +1,14 @@
 import { BookOpenTextIcon, CircleDollarSign } from "lucide-react";
 import Link from "next/link";
 
+interface DisciplinaType {
+  sigla: string;
+  nome_completo: string;
+  creditos: number;
+  periodo: number;
+  status: string;
+}
+
 export function Disciplina({
   item,
 }: {
